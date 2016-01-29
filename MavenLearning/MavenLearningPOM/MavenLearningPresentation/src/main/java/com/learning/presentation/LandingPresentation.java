@@ -13,5 +13,9 @@ public class LandingPresentation {
 		
 		logger.debug("Processing");
 	}
+	
+	public String returnString(){
+		return "Random String";
+	}
 
 }
