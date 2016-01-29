@@ -1,2 +1,2 @@
 # MavenLearning
-Learning Test Repository - Please refer Wiki
+Learning Test Repository - Please refer [Wiki](https://github.com/jacjos/MavenLearning/wiki)
