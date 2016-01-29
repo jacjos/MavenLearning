@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.learning.presentation.LandingPresentation;
 import com.learning.web.constants.WebApplicationConstants;
 
 @Controller
@@ -17,10 +18,14 @@ public class LandingController {
 	@Autowired
 	WebApplicationConstants webappConstants;
 	
+	@Autowired
+	LandingPresentation landingPresentation;
+	
 	@RequestMapping({"/home", "/login"})
 	public ModelAndView loadApp(){
 		
 		logger.debug("Inside method : {}", "loadApp");
+		landingPresentation.doProcess();
 		
 		ModelAndView modelView = new ModelAndView(webappConstants.view_name_bootstrap);
 		return modelView;

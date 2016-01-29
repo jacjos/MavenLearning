@@ -15,4 +15,11 @@
   <build>
     <finalName>MavenLearningWeb</finalName>
   </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.learning</groupId>
+  		<artifactId>MavenLearningPresentation</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
